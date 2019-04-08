@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Common Destinations</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="reset" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./dist/css/animsition.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/uqw6uln.css">
+</head>
+<body>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="page_index.html">Common Destinations.</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="page_index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="locations.html">Locations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.php">Comments</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <a class="btn btn-dark btn-lg" href="login.html" role="button">Login</a>
+          </form>
+        </div>
+      </nav>
+
+      <div class="card bg-dark text-white rounded-0 border-0">
+        <img class="card-img rounded-0 border-0" src="img/campfire.jpg" alt="Card image">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Travel and Zen</h5>
+        </div>
+      </div>
+
+          <br>
+          <br>
+          <br>
+          <br>
+
+  <form>
+  <label>
+    <p class="label-txt">First and Last Name</p>
+    <input type="text" class="input">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">Email</p>
+    <input type="text" class="input">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <label>
+    <p class="label-txt">Message</p>
+    <input type="text" class="input">
+    <div class="line-box">
+      <div class="line"></div>
+    </div>
+  </label>
+  <div class="mx-auto" style="width: 100px;">
+  <a class="btn btn-dark btn-lg" href="page_index.html" role="button">Send</a>
+</div>
+</form>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+<div class="jumbotron jumbotron-fluid-3 rounded-0 border-0">
+  <div class="container">
+      <div class="footer">
+
+          <h3 class="display-3">Common Destinations</h3>
+          <br>
+          <p class="lead-3">
+          © 2018, Designed by Jonathan Hall.<br> All Visual Content from Google
+        </p>
+        <br>
+        <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.google.com" target="_blank" class="fa fa-google"></a>
+        <a href="https://www.youtube.com" target="_blank" class="fa fa-youtube"></a>
+        </div>
+        <br>
+      </div>
+  </div>
+
+</body>
+
+<script src="./dist/js/animsition.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- animsition.js -->
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
+    <script>
+
+    $(document).ready(function(){
+
+      $('input').focus(function(){
+        $(this).parent().find(".label-txt").addClass('label-active');
+      });
+
+      $("input").focusout(function(){
+        if ($(this).val() == '') {
+          $(this).parent().find(".label-txt").removeClass('label-active');
+        };
+      });
+
+    });
+    </script>
+</html>
